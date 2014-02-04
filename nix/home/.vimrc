@@ -14,8 +14,5 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set nu
 set ruler
 
-" clipboard
-set clipboard=unnamedplus
-" map delete to black whole register
-" nnoremap d "_d
-" vnoremap d "_d
+" clipboard (use system clipboard for default register)
+set clipboard=unnamedplus 
