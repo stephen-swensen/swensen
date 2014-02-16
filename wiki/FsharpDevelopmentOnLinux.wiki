@@ -1,0 +1,7 @@
+#labels mono,linux
+# tips and tricks for fsharp development on linux with mono
+
+Current instructions for openSUSE 13.1
+
+  * Install mono-complete, monodevelop, and fsharp packages from the Tehnari repositories (the offical repos are too out of date)
+  * Install libgnomeui missing dependency that causes monodevelop crash on startup
