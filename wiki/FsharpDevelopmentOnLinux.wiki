@@ -1,5 +1,5 @@
+#summary tips and tricks for fsharp development on linux with mono
 #labels mono,linux
-# tips and tricks for fsharp development on linux with mono
 
 Current instructions for openSUSE 13.1
 
