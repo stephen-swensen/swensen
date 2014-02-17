@@ -10,3 +10,5 @@ Current instructions for openSUSE 13.1
 Problems
   * xbuild fails with claim of missing "Build" target (the main Microsoft target inherited by all projects)
   * MonoDevelop often gives disruptive dialog prompt warnings about multiple F# Interactive bindings
+
+Currently unusable due to unresolved problems.
