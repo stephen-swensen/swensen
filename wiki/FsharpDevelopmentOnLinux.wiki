@@ -3,12 +3,14 @@
 
 Current instructions for openSUSE 13.1
 
-  * install mono-complete, monodevelop, and fsharp packages from the Tehnari repositories (the offical repos are too out of date)
+  * install mono-complete and monodevelop packages from the Tehnari repositories (the offical repos are too out of date)
   * install libgnomeui missing dependency that causes monodevelop crash on startup
+  * manually build and install F# 3.1 from sources (the fsharp package in the Tehnari repo is bad):
+{{{
+git clone -b fsharp_31 https://github.com/fsharp/fsharp fsharp31
+ cd fsharp31
+ ./autogen.sh --prefix /usr
+ make
+ sudo make install
+}}}
   * install F# add-in from the MonoDevelop add-in manager
-
-Problems
-  * xbuild fails with claim of missing "Build" target (the main Microsoft target inherited by all projects)
-  * MonoDevelop often gives disruptive dialog prompt warnings about multiple F# Interactive bindings
-
-Currently unusable due to unresolved problems.
