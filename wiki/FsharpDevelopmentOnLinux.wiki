@@ -8,9 +8,9 @@ Current instructions for openSUSE 13.1
   * manually build and install F# 3.1 from sources (the fsharp package in the Tehnari repo is bad):
 {{{
 git clone -b fsharp_31 https://github.com/fsharp/fsharp fsharp31
- cd fsharp31
- ./autogen.sh --prefix /usr
- make
- sudo make install
+cd fsharp31
+./autogen.sh --prefix /usr
+make
+sudo make install
 }}}
   * install F# add-in from the MonoDevelop add-in manager
