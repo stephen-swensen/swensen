@@ -14,3 +14,7 @@ make
 sudo make install
 }}}
   * install F# add-in from the MonoDevelop add-in manager
+
+Solving NuGet issues
+  * for solutions using nuget package restore, rename all the files in the .nuget folder to lower-case, so that they are case-consistent with your MSBuild project and solutions files
+  * install required ssl certs: http://stackoverflow.com/a/16589218/236255
