@@ -16,13 +16,17 @@ void getInput(int* a, int* b) {
 }
 
 int main() {
-    int* p;
-    int i, j;
-    getInput(&i, &j);
-    p = max(&i, &j);
-    printf("max is %d\n", *p);
-
-    printf("change int pointer p: ");
-    scanf("%d",p);
-    printf("now *p=%d, i=%d, j=%d\n", *p, i, j);
+//    int* p;
+//    int i, j;
+//    getInput(&i, &j);
+//    p = max(&i, &j);
+//    printf("max is %d\n", *p);
+//
+//    printf("change int pointer p: ");
+//    scanf("%d",p);
+//    printf("now *p=%d, i=%d, j=%d\n", *p, i, j);
+    
+    int c;
+    while ((c = getchar()) != EOF)
+        putchar(c);
 }
