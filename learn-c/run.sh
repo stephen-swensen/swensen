@@ -1,3 +1,3 @@
 rm a.out
-clang t.c
+gcc t.c
 ./a.out
