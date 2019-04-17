@@ -11,7 +11,7 @@
 //  5   6   
 
 int binsearch(int x, int v[], int size) {
-    int _binsearch(int x, int v[], int i, int j) {
+    int binsearch(int x, int v[], int i, int j) {
         printf("x=%i, i=%i, j=%i\n", x, i, j);
         int k = (i + j) / 2;
         printf("k=%i\n", k);
@@ -22,12 +22,12 @@ int binsearch(int x, int v[], int size) {
         else if (vk == x)
             return k;
         else if (vk > x)
-            return _binsearch(x, v, i, k-1);
+            return binsearch(x, v, i, k-1);
         else if (vk < x)
-            return _binsearch(x, v, k+1, j);
+            return binsearch(x, v, k+1, j);
     };
 
-    return _binsearch(x, v, 0, size-1);
+    return binsearch(x, v, 0, size-1);
 }
 
 
