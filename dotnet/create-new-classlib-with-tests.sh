@@ -7,7 +7,7 @@ fi
 
 dotnet new classlib -lang F# -n $1 -o src
 dotnet new nunit -lang F# -n $1Tests -o tests
-dotnet add src/$1Tests.fsproj package Unquote
+dotnet add tests/$1Tests.fsproj package Unquote
 
 dotnet new sln -n $1
 dotnet sln add src/$1.fsproj
